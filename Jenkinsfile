@@ -25,7 +25,9 @@ pipeline {
             //enable remote triggers
             properties([pipelineTriggers([pollSCM('* * * * *')])])
             sh 'date'
-            
+              
+            sh 'echo "hello world"'
+           
   
   
           }
